@@ -10,8 +10,10 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input expression:");
-        String scannerString = scanner.nextLine();
 
-        System.out.println(PolishNotation.ExpressionToPolishNotation(scannerString));
+        String scannerString = scanner.nextLine();
+        String polishNotation = PolishNotation.ExpressionToPolishNotation(scannerString);
+
+        System.out.println(polishNotation);
     }
 }

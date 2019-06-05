@@ -33,22 +33,21 @@ public class PolishNotation {
 
             }
 
-            if(priority == -1){
+            if (priority == -1) {
                 builder.append(' ');
 
-                while (getPriority(charStack.peek()) != 1){
+                while (getPriority(charStack.peek()) != 1) {
                     builder.append(charStack.pop());
                 }
                 charStack.pop();
             }
         }
 
-        while (!charStack.empty()){
+        while (!charStack.empty()) {
             builder.append(charStack.pop());
         }
 
         return builder.toString();
-
     }
 
     private static int getPriority(char symbol) {
