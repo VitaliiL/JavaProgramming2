@@ -1,3 +1,5 @@
+package com.course.lapshakov.sem2.converToPolishNotation;
+
 import java.util.Stack;
 
 public class PolishNotation {

@@ -1,5 +1,8 @@
+package com.course.lapshakov.sem2.main;
+
+import com.course.lapshakov.sem2.converToPolishNotation.PolishNotation;
+
 import java.util.Scanner;
-import java.util.Stack;
 
 //  2 + 3 * 5 - 7
 
