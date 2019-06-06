@@ -15,5 +15,18 @@ class GuessNumber {
 
         return checkWin;
     }
+
+    static boolean checkGameOver(int counter, int randomValue) {
+        boolean checkGameOver = false;
+
+        if (counter == UserActions.ATTEMPT_COUNT) {
+            System.out.println("GAME OVER!");
+            System.out.println("Random value: " + randomValue);
+
+            checkGameOver = true;
+        }
+
+        return checkGameOver;
+    }
 }
 
