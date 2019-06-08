@@ -1,6 +1,6 @@
 package com.course.lapshakov.sem1;
 
-class GuessNumber {
+class GameLogic {
     static boolean compareValue(int value, int randomValue) {
         boolean checkWin = false;
 
@@ -14,6 +14,19 @@ class GuessNumber {
         }
 
         return checkWin;
+    }
+
+    static boolean checkGameOver(int counter, int randomValue) {
+        boolean checkGameOver = false;
+
+        if (counter == UserAction.ATTEMPT_COUNT) {
+            System.out.println("GAME OVER!");
+            System.out.println("Random value: " + randomValue);
+
+            checkGameOver = true;
+        }
+
+        return checkGameOver;
     }
 }
 
