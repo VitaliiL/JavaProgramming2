@@ -1,12 +1,5 @@
 package com.course.lapshakov.sem2.arithmeticOperations;
 
-import com.course.lapshakov.sem2.interfaces.Action;
+public class Div {
 
-import java.util.Stack;
-
-public class Div implements Action {
-    @Override
-    public double executeAction(Stack<Double> stack, String inputString) {
-        return 0;
-    }
 }
