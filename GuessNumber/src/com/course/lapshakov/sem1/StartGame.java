@@ -1,7 +1,7 @@
 package com.course.lapshakov.sem1;
 
-public class Main {
+public class StartGame {
     public static void main(String[] args) {
-        new UserAction().inputValue();
+        new UserAction().activateGame();
     }
 }

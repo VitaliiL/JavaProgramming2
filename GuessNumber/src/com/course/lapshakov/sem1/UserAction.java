@@ -6,7 +6,7 @@ import java.util.Scanner;
 class UserAction {
     static final int ATTEMPT_COUNT = 4;
 
-    void inputValue() {
+    void activateGame() {
         Random random = new Random();
         int randomValue = random.nextInt(11);
 
