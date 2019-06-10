@@ -5,24 +5,33 @@ import com.course.lapshakov.sem2.Parsers.FileParser;
 import com.course.lapshakov.sem2.interfaces.Command;
 import com.course.lapshakov.sem2.interfaces.Parser;
 
+import java.util.EmptyStackException;
 import java.util.List;
 
 public class Calculator {
-    Parser parser;
+    private Parser parser;
 
-    public Calculator(Parser parser) {
+    private Calculator(Parser parser) {
         this.parser = parser;
     }
 
-    void execute() {
+    private void execute() {
         List<Command> commands = parser.getCommands();
-        for (Command command : commands) {
-            command.execute();
+
+        try {
+            for (Command command : commands) {
+                command.executeCommand();
+            }
+        }catch (EmptyStackException e){
+            System.err.println("Your stack is empty. Need to push values.");
+        }catch (NumberFormatException e){
+            System.err.println("Your argument isn't a value.");
         }
     }
 
     public static void main(String[] args) {
         Parser parser;
+
         if (args.length == 0) {
             parser = new ConsoleParser();
         } else {
