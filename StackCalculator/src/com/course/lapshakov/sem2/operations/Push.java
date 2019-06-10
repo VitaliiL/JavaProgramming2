@@ -51,17 +51,17 @@ public class Push implements StackCommand, ArithmeticCommand, DefineCommand {
 
     @Override
     public void executeCommand() throws EmptyStackException, NumberFormatException {
-        char [] charsArray = arguments[1].toCharArray();
-
-        for(int i = 0; i< charsArray.length; i++) {
-            if (Character.isDigit(charsArray[i])){
-                stack.push(Double.parseDouble(arguments[1]));
-            }else{
-               // stack.push(define.)
-            }
-
+        if(isNumber(arguments[1])) {
+            stack.push(Double.parseDouble(arguments[1]));
         }
     }
 
+    private boolean isNumber(String string) {
+        if (string == null || string.isEmpty()) return false;
+        for (int i = 0; i < string.length(); i++) {
+            if (!Character.isDigit(string.charAt(i))) return false;
+        }
+        return true;
+    }
 
 }
