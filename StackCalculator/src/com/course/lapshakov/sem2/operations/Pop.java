@@ -1,12 +1,13 @@
 package com.course.lapshakov.sem2.operations;
 
+import com.course.lapshakov.sem2.interfaces.ArithmeticCommand;
 import com.course.lapshakov.sem2.interfaces.Command;
 import com.course.lapshakov.sem2.interfaces.StackCommand;
 
 import java.util.EmptyStackException;
 import java.util.Stack;
 
-public class Pop implements StackCommand {
+public class Pop implements ArithmeticCommand {
     private Stack<Double> stack;
 
     public Pop() {
@@ -19,11 +20,6 @@ public class Pop implements StackCommand {
     @Override
     public void setStack(Stack<Double> stack) {
         this.stack = stack;
-    }
-
-    @Override
-    public void setString(String[] arguments) {
-
     }
 
     @Override

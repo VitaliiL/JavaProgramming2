@@ -1,11 +1,12 @@
 package com.course.lapshakov.sem2.operations;
 
+import com.course.lapshakov.sem2.interfaces.ArithmeticCommand;
 import com.course.lapshakov.sem2.interfaces.Command;
 
 import java.util.EmptyStackException;
 import java.util.Stack;
 
-public class Div implements Command {
+public class Div implements ArithmeticCommand {
     private Stack<Double> stack;
 
     public Div() {

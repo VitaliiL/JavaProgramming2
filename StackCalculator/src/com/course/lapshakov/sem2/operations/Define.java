@@ -1,22 +1,23 @@
 package com.course.lapshakov.sem2.operations;
 
 import com.course.lapshakov.sem2.interfaces.Command;
+import com.course.lapshakov.sem2.interfaces.DefineCommand;
 
 import java.util.EmptyStackException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
-public class Define implements Command {
+public class Define implements DefineCommand {
     private String[] arguments;
-    private Stack<Double> stack = new Stack<>();
+    private Map<String, Double> variables = new HashMap<>();
 
     public Define() {
     }
 
-    private Define(String[] arguments, Stack<Double> stack) {
+    private Define(String[] arguments, Map<String, Double> variables) {
         this.arguments = arguments;
-        this.stack = stack;
+        this.variables = variables;
     }
 
     @Override
@@ -26,12 +27,12 @@ public class Define implements Command {
 
     @Override
     public Command getCommandObject() {
-        return new Define(arguments, stack);
+        return new Define(arguments, variables);
     }
 
-
-    public void setStack(Stack<Double> stack) {
-        this.stack = stack;
+    @Override
+    public void setMap(Map<String, Double> variables) {
+        this.variables = variables;
     }
 
     public void setString(String[] arguments) {
@@ -40,7 +41,6 @@ public class Define implements Command {
 
     @Override
     public void executeCommand() throws EmptyStackException, NumberFormatException {
-        Map<String, Double> variables = new HashMap<>();
         //arguments - [Define, a, 4]
 
         double variableValue = Double.parseDouble(arguments[2]);

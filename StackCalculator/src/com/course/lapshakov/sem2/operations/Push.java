@@ -1,14 +1,20 @@
 package com.course.lapshakov.sem2.operations;
 
+import com.course.lapshakov.sem2.interfaces.ArithmeticCommand;
 import com.course.lapshakov.sem2.interfaces.Command;
+import com.course.lapshakov.sem2.interfaces.DefineCommand;
 import com.course.lapshakov.sem2.interfaces.StackCommand;
 
 import java.util.EmptyStackException;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Stack;
 
-public class Push implements StackCommand {
+public class Push implements StackCommand, ArithmeticCommand, DefineCommand {
     private Stack<Double> stack;
     private String[] arguments;
+    private Map<String, Double> variables;
+    private Define define;
 
     public Push() {
     }
@@ -29,6 +35,11 @@ public class Push implements StackCommand {
     }
 
     @Override
+    public void setMap(Map<String, Double> variables) {
+        this.variables = variables;
+    }
+
+    @Override
     public String getCommandName() {
         return "Push";
     }
@@ -40,6 +51,17 @@ public class Push implements StackCommand {
 
     @Override
     public void executeCommand() throws EmptyStackException, NumberFormatException {
-        stack.push(Double.parseDouble(arguments[1]));
+        char [] charsArray = arguments[1].toCharArray();
+
+        for(int i = 0; i< charsArray.length; i++) {
+            if (Character.isDigit(charsArray[i])){
+                stack.push(Double.parseDouble(arguments[1]));
+            }else{
+               // stack.push(define.)
+            }
+
+        }
     }
+
+
 }

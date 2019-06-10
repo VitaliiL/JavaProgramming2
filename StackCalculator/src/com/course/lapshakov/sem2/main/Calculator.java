@@ -25,7 +25,7 @@ public class Calculator {
         }catch (EmptyStackException e){
             System.err.println("Your stack is empty. Need to push values.");
         }catch (NumberFormatException e){
-            System.err.println("Your argument isn't a value.");
+            System.err.println("Check your argument.");
         }
     }
 

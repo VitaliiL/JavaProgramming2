@@ -8,6 +8,4 @@ public interface Command {
     Command getCommandObject();
 
     void executeCommand();
-
-    void setStack(Stack<Double> stack);
 }
