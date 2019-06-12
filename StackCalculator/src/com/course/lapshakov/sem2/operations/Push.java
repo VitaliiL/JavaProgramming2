@@ -1,27 +1,23 @@
 package com.course.lapshakov.sem2.operations;
 
-import com.course.lapshakov.sem2.interfaces.ArithmeticCommand;
-import com.course.lapshakov.sem2.interfaces.Command;
-import com.course.lapshakov.sem2.interfaces.DefineCommand;
-import com.course.lapshakov.sem2.interfaces.StackCommand;
+import com.course.lapshakov.sem2.Common.Command;
 
 import java.util.EmptyStackException;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
-public class Push implements StackCommand, ArithmeticCommand, DefineCommand {
+public class Push extends Command {
     private Stack<Double> stack;
     private String[] arguments;
     private Map<String, Double> variables;
-    private Define define;
 
     public Push() {
     }
 
-    private Push(String[] arguments, Stack<Double> stack) {
+    private Push(String[] arguments, Stack<Double> stack, Map<String, Double> variables) {
         this.stack = stack;
         this.arguments = arguments;
+        this.variables = variables;
     }
 
     @Override
@@ -46,22 +42,34 @@ public class Push implements StackCommand, ArithmeticCommand, DefineCommand {
 
     @Override
     public Push getCommandObject() {
-        return new Push(arguments, stack);
+        return new Push(arguments, stack, variables);
     }
 
     @Override
-    public void executeCommand() throws EmptyStackException, NumberFormatException {
-        if(isNumber(arguments[1])) {
+    public void executeCommand() throws EmptyStackException, IllegalArgumentException {
+        if (isNumber(arguments[1])) {
             stack.push(Double.parseDouble(arguments[1]));
+        } else {
+            if (variables.isEmpty()) {
+                throw new IllegalArgumentException("You should input an argument for \"define\" command.");
+            } else {
+                stack.push(variables.get(arguments[1]));
+            }
+
         }
     }
 
     private boolean isNumber(String string) {
-        if (string == null || string.isEmpty()) return false;
-        for (int i = 0; i < string.length(); i++) {
-            if (!Character.isDigit(string.charAt(i))) return false;
+        if (string == null || string.isEmpty()) {
+            throw new IllegalArgumentException("You should input an argument for \"push\" command.");
         }
+
+        for (int i = 0; i < string.length(); i++) {
+            if (!Character.isDigit(string.charAt(i))) {
+                return false;
+            }
+        }
+
         return true;
     }
-
 }

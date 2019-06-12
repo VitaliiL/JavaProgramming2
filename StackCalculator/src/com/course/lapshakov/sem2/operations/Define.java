@@ -1,22 +1,30 @@
 package com.course.lapshakov.sem2.operations;
 
-import com.course.lapshakov.sem2.interfaces.Command;
-import com.course.lapshakov.sem2.interfaces.DefineCommand;
+import com.course.lapshakov.sem2.Common.Command;
 
 import java.util.EmptyStackException;
-import java.util.HashMap;
 import java.util.Map;
-import java.util.Stack;
 
-public class Define implements DefineCommand {
+public class Define extends Command {
+    private static final int DEFINE_SIZE = 3;
     private String[] arguments;
-    private Map<String, Double> variables = new HashMap<>();
+    private Map<String, Double> variables;
 
     public Define() {
     }
 
     private Define(String[] arguments, Map<String, Double> variables) {
         this.arguments = arguments;
+        this.variables = variables;
+    }
+
+    @Override
+    public void setString(String[] arguments) {
+        this.arguments = arguments;
+    }
+
+    @Override
+    public void setMap(Map<String, Double> variables) {
         this.variables = variables;
     }
 
@@ -31,22 +39,14 @@ public class Define implements DefineCommand {
     }
 
     @Override
-    public void setMap(Map<String, Double> variables) {
-        this.variables = variables;
-    }
-
-    public void setString(String[] arguments) {
-        this.arguments = arguments;
-    }
-
-    @Override
-    public void executeCommand() throws EmptyStackException, NumberFormatException {
+    public void executeCommand() throws EmptyStackException, NumberFormatException, ArrayIndexOutOfBoundsException {
         //arguments - [Define, a, 4]
+        if (arguments.length != DEFINE_SIZE) {
+            throw new IllegalArgumentException("You should input an argument for \"define\" command.");
+        }
 
         double variableValue = Double.parseDouble(arguments[2]);
         String variableName = arguments[1];
         variables.put(variableName, variableValue);
-
-        variables.get(variableName);
     }
 }

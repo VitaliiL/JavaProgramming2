@@ -2,8 +2,8 @@ package com.course.lapshakov.sem2.main;
 
 import com.course.lapshakov.sem2.Parsers.ConsoleParser;
 import com.course.lapshakov.sem2.Parsers.FileParser;
-import com.course.lapshakov.sem2.interfaces.Command;
-import com.course.lapshakov.sem2.interfaces.Parser;
+import com.course.lapshakov.sem2.Common.Command;
+import com.course.lapshakov.sem2.Common.Parser;
 
 import java.util.EmptyStackException;
 import java.util.List;
@@ -22,10 +22,12 @@ public class Calculator {
             for (Command command : commands) {
                 command.executeCommand();
             }
-        }catch (EmptyStackException e){
+        } catch (EmptyStackException e) {
             System.err.println("Your stack is empty. Need to push values.");
-        }catch (NumberFormatException e){
-            System.err.println("Check your argument.");
+        } catch (NumberFormatException e) {
+            System.err.println("Check your argument format.");
+        } catch (IllegalArgumentException e) {
+            System.err.println(e.getMessage());
         }
     }
 
