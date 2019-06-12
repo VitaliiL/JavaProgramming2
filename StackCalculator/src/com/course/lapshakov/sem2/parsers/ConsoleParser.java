@@ -1,23 +1,24 @@
-package com.course.lapshakov.sem2.Parsers;
+package com.course.lapshakov.sem2.parsers;
 
-import com.course.lapshakov.sem2.Common.*;
 import com.course.lapshakov.sem2.main.UserCommand;
+import com.course.lapshakov.sem2.operations.Command;
 
 import java.util.*;
 
 public class ConsoleParser implements Parser {
+    private static final Scanner SCANNER = new Scanner(System.in);
+
     @Override
     public List<Command> getCommands() {
         List<Command> commandList = new ArrayList<>();
         UserCommand userCommand = new UserCommand();
 
-        Scanner scanner = new Scanner(System.in);
         System.out.println("input your commands:");
 
         while (true) {
-            String inputScannerString = scanner.nextLine();
+            String inputScannerString = SCANNER.nextLine();
 
-            if (inputScannerString.equalsIgnoreCase("exit")) {
+            if ("exit".equalsIgnoreCase(inputScannerString)) {
                 break;
             } else {
                 if (inputScannerString.isEmpty()) {

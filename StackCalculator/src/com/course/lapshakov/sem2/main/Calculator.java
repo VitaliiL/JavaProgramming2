@@ -1,9 +1,9 @@
 package com.course.lapshakov.sem2.main;
 
-import com.course.lapshakov.sem2.Parsers.ConsoleParser;
-import com.course.lapshakov.sem2.Parsers.FileParser;
-import com.course.lapshakov.sem2.Common.Command;
-import com.course.lapshakov.sem2.Common.Parser;
+import com.course.lapshakov.sem2.parsers.ConsoleParser;
+import com.course.lapshakov.sem2.parsers.FileParser;
+import com.course.lapshakov.sem2.operations.Command;
+import com.course.lapshakov.sem2.parsers.Parser;
 
 import java.util.EmptyStackException;
 import java.util.List;
@@ -37,6 +37,10 @@ public class Calculator {
         if (args.length == 0) {
             parser = new ConsoleParser();
         } else {
+            if (args.length != 2) {
+                System.err.println("You should input 2 paths in the program arguments: source and destination files.");
+            }
+
             parser = new FileParser(args[0], args[1]);
         }
 

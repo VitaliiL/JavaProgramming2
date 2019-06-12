@@ -1,6 +1,6 @@
 package com.course.lapshakov.sem2.main;
 
-import com.course.lapshakov.sem2.Common.Command;
+import com.course.lapshakov.sem2.operations.Command;
 import com.course.lapshakov.sem2.operations.*;
 
 import java.util.*;
@@ -8,7 +8,7 @@ import java.util.*;
 /*
 * This class forms a user command list.
 *
-* @para COMMAND_LIST is common list with all possible command.
+* @param COMMAND_LIST is common list with all possible commands.
 * @return user command list.
 *
 * */

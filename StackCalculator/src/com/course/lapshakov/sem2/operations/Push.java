@@ -1,12 +1,10 @@
 package com.course.lapshakov.sem2.operations;
 
-import com.course.lapshakov.sem2.Common.Command;
-
 import java.util.EmptyStackException;
 import java.util.Map;
 import java.util.Stack;
 
-public class Push extends Command {
+public class Push implements Command {
     private Stack<Double> stack;
     private String[] arguments;
     private Map<String, Double> variables;

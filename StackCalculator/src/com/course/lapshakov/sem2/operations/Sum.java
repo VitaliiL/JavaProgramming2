@@ -1,11 +1,9 @@
 package com.course.lapshakov.sem2.operations;
 
-import com.course.lapshakov.sem2.Common.Command;
-
 import java.util.EmptyStackException;
 import java.util.Stack;
 
-public class Sum extends Command {
+public class Sum implements Command {
     private Stack<Double> stack;
 
     public Sum() {

@@ -1,11 +1,9 @@
 package com.course.lapshakov.sem2.operations;
 
-import com.course.lapshakov.sem2.Common.Command;
-
 import java.util.EmptyStackException;
 import java.util.Map;
 
-public class Define extends Command {
+public class Define implements Command {
     private static final int DEFINE_SIZE = 3;
     private String[] arguments;
     private Map<String, Double> variables;

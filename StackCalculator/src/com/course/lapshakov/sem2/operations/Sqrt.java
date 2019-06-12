@@ -1,11 +1,9 @@
 package com.course.lapshakov.sem2.operations;
 
-import com.course.lapshakov.sem2.Common.Command;
-
 import java.util.EmptyStackException;
 import java.util.Stack;
 
-public class Sqrt extends Command {
+public class Sqrt implements Command {
     private Stack<Double> stack;
 
     public Sqrt() {
