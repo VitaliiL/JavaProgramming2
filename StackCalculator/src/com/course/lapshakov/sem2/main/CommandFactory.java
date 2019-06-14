@@ -13,7 +13,7 @@ import java.util.*;
 *
 * */
 
-public class UserCommand {
+public class CommandFactory {
     private Stack<Double> stack = new Stack<>();
     private Map<String, Double> variables = new HashMap<>();
     private static final List<Command> COMMAND_LIST = new ArrayList<>(Arrays.asList(

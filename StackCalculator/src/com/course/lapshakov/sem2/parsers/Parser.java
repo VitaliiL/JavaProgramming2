@@ -1,9 +1,16 @@
-package com.course.lapshakov.sem2.Parsers;
+package com.course.lapshakov.sem2.parsers;
 
-import com.course.lapshakov.sem2.common.Command;
+import com.course.lapshakov.sem2.operations.Command;
 
+import java.io.InputStream;
 import java.util.List;
 
 public interface Parser {
-    List<Command> getCommands();
+    default List<Command> getCommands(InputStream inputStream) {
+        return null;
+    }
+
+    default List<Command> getUserCommands() {
+        return null;
+    }
 }

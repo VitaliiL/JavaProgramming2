@@ -57,6 +57,11 @@ public class Push implements Command {
         }
     }
 
+    /*
+    * Check arguments of push command.
+    * If arguments[1] isn't digit arguments are after define command.
+    * */
+
     private boolean isNumber(String string) {
         if (string == null || string.isEmpty()) {
             throw new IllegalArgumentException("You should input an argument for \"push\" command.");

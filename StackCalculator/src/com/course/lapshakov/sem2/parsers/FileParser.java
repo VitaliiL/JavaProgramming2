@@ -1,55 +1,28 @@
-package com.course.lapshakov.sem2.Parsers;
+package com.course.lapshakov.sem2.parsers;
 
-import com.course.lapshakov.sem2.common.Command;
-import com.course.lapshakov.sem2.main.UserCommand;
-import com.course.lapshakov.sem2.operations.Print;
+import com.course.lapshakov.sem2.operations.Command;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.PrintWriter;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.NoSuchElementException;
-import java.util.Scanner;
 
 public class FileParser implements Parser {
-    private List<Command> commandList = new ArrayList<>();
+    private String inputFile;
+    private static Reader reader = new Reader();
 
-    @SuppressWarnings("InfiniteLoopStatement")
-    public FileParser(String inputFile, String outputFile) {
-        UserCommand userCommand = new UserCommand();
-
-        try (Scanner scanner = new Scanner(new FileInputStream(inputFile));
-             PrintWriter writer = new PrintWriter(outputFile)) {
-
-            while (true) {
-                String inputScannerString = scanner.nextLine();
-
-                if("print".equalsIgnoreCase(scanner.nextLine()))
-                    throw new IllegalArgumentException("You should to finish command input by \"print\"");
-
-                var arguments = inputScannerString.split(" ");
-
-                Command command = userCommand.findNeededCommand(arguments);
-
-                if (command != null) {
-                    commandList.add(command);
-                }
-
-                if ("print".equalsIgnoreCase(inputScannerString)) {
-                    writer.println("Result: " + new Print().getResult());
-                }
-            }
-        } catch (FileNotFoundException e) {
-            System.err.println("Your file not found.");
-            e.printStackTrace();
-        } catch (NoSuchElementException e){
-            System.err.println("File is empty.");
-        }
+    public FileParser(String inputFile) {
+        this.inputFile = inputFile;
     }
 
     @Override
-    public List<Command> getCommands() {
-        return commandList;
+    public List<Command> getUserCommands() throws IllegalArgumentException {
+        try {
+            return reader.getCommands(new FileInputStream(inputFile));
+        } catch (FileNotFoundException e) {
+            System.err.println("Your file not found.");
+            e.printStackTrace();
+        }
+
+        throw new IllegalArgumentException("There are no commands.");
     }
 }

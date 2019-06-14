@@ -1,0 +1,5 @@
+define a 6
+push a
+push 9
+sum
+print

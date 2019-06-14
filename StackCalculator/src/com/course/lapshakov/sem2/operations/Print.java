@@ -28,8 +28,12 @@ public class Print implements Command {
         return new Print(stack);
     }
 
-    @Override
-    public void executeCommand() throws EmptyStackException {
+
+    public void printToConsole() throws EmptyStackException {
         System.out.println("Result: " + stack.peek());
+    }
+
+    public double printToFile() throws EmptyStackException {
+        return stack.peek();
     }
 }

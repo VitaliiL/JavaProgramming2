@@ -8,7 +8,9 @@ public interface Command {
 
     Command getCommandObject();
 
-    void executeCommand();
+    default void executeCommand(){
+
+    }
 
     default void setString(String[] arguments) {
 
