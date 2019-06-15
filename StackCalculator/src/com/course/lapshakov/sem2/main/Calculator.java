@@ -1,15 +1,13 @@
 package com.course.lapshakov.sem2.main;
 
+import com.course.lapshakov.sem2.Parsers.ConsoleParser;
+import com.course.lapshakov.sem2.Parsers.FileParser;
+import com.course.lapshakov.sem2.Parsers.Parser;
 import com.course.lapshakov.sem2.operations.Print;
-import com.course.lapshakov.sem2.parsers.ConsoleParser;
-import com.course.lapshakov.sem2.parsers.FileParser;
 import com.course.lapshakov.sem2.operations.Command;
-import com.course.lapshakov.sem2.parsers.Parser;
 
 import java.io.FileNotFoundException;
-import java.io.InputStream;
 import java.io.PrintWriter;
-import java.util.Calendar;
 import java.util.EmptyStackException;
 import java.util.List;
 
