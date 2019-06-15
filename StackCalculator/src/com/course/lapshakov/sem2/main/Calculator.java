@@ -51,6 +51,7 @@ public class Calculator {
         } catch (IndexOutOfBoundsException e) {
             System.err.println("Check your arguments.");
         } catch (FileNotFoundException e) {
+            System.err.println("Your file not found.");
             e.printStackTrace();
         }
     }
