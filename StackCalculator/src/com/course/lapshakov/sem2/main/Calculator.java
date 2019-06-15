@@ -7,11 +7,15 @@ import com.course.lapshakov.sem2.operations.Command;
 import com.course.lapshakov.sem2.parsers.Parser;
 
 import java.io.FileNotFoundException;
-import java.io.InputStream;
 import java.io.PrintWriter;
-import java.util.Calendar;
 import java.util.EmptyStackException;
 import java.util.List;
+
+/*
+*
+* instanceof need to change. It need to use fo example if works with object.
+*
+* */
 
 public class Calculator {
     private Parser parser;
@@ -33,15 +37,15 @@ public class Calculator {
             for (Command command : commands) {
                 command.executeCommand();
 
-                if (parser instanceof ConsoleParser && command instanceof Print) {
-                    ((Print) command).printToConsole();
-                }
-
-                if (parser instanceof FileParser && command instanceof Print) {
-                    PrintWriter printWriter = new PrintWriter(outputFile);
-                    double res = ((Print) command).printToFile();
-                    printWriter.write("Result: " + res);
-                    printWriter.close();
+                if (command instanceof Print) {
+                    if (parser instanceof ConsoleParser) {
+                        ((Print) command).printToConsole();
+                    } else {
+                        PrintWriter printWriter = new PrintWriter(outputFile);
+                        double res = ((Print) command).printToFile();
+                        printWriter.write("Result: " + res);
+                        printWriter.close();
+                    }
                 }
             }
         } catch (EmptyStackException e) {

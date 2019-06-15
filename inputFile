@@ -1,5 +1,10 @@
 define a 6
+define x 60
 push a
 push 9
 sum
+push x
+push 10
+mult
+mult 100
 print
