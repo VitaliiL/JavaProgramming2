@@ -31,15 +31,15 @@ public class Calculator {
             for (Command command : commands) {
                 command.executeCommand();
 
-                if (parser instanceof ConsoleParser && command instanceof Print) {
-                    ((Print) command).printToConsole();
-                }
-
-                if (parser instanceof FileParser && command instanceof Print) {
-                    PrintWriter printWriter = new PrintWriter(outputFile);
-                    double res = ((Print) command).printToFile();
-                    printWriter.write("Result: " + res);
-                    printWriter.close();
+                if (command instanceof Print) {
+                    if (parser instanceof ConsoleParser) {
+                        ((Print) command).printToConsole();
+                    } else {
+                        PrintWriter printWriter = new PrintWriter(outputFile);
+                        double res = ((Print) command).printToFile();
+                        printWriter.write("Result: " + res);
+                        printWriter.close();
+                    }
                 }
             }
         } catch (EmptyStackException e) {
