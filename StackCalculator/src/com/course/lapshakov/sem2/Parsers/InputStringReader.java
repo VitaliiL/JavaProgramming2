@@ -13,7 +13,7 @@ public class InputStringReader implements Parser {
     private static InputStringReader reader = new InputStringReader();
 
     @Override
-    public List<Command> getCommands(InputStream inputStream) {
+    public List<Command> getCommands(InputStream inputStream) throws IllegalArgumentException {
         Scanner scanner = new Scanner(inputStream);
         CommandFactory commandFactory = new CommandFactory();
 
