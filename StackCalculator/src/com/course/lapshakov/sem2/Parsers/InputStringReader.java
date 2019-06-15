@@ -10,7 +10,6 @@ import java.util.Scanner;
 
 public class InputStringReader implements Parser {
     private static List<Command> commandList = new ArrayList<>();
-    private static InputStringReader reader = new InputStringReader();
 
     @Override
     public List<Command> getCommands(InputStream inputStream) throws IllegalArgumentException {
