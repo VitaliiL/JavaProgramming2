@@ -1,4 +1,4 @@
-package com.course.lapshakov.sem2.Parsers;
+package com.course.lapshakov.sem2.parsers;
 
 import com.course.lapshakov.sem2.main.CommandFactory;
 import com.course.lapshakov.sem2.operations.Command;
@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class InputStringReader implements Parser {
+public class Reader implements Parser {
     private static List<Command> commandList = new ArrayList<>();
 
     @Override

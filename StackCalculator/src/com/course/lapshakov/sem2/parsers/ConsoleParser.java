@@ -1,11 +1,11 @@
-package com.course.lapshakov.sem2.Parsers;
+package com.course.lapshakov.sem2.parsers;
 
 import com.course.lapshakov.sem2.operations.Command;
 
 import java.util.*;
 
 public class ConsoleParser implements Parser {
-    private static InputStringReader reader = new InputStringReader();
+    private static Reader reader = new Reader();
 
     @Override
     public List<Command> getUserCommands() throws IllegalArgumentException{
