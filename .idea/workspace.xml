@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3f5ded8-679a-4a8a-b790-36494603e844" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/StackCalculator/src/com/course/lapshakov/sem2/parsers/FileParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/StackCalculator/src/com/course/lapshakov/sem2/parsers/FileParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StackCalculator/src/com/course/lapshakov/sem2/parsers/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/StackCalculator/src/com/course/lapshakov/sem2/parsers/Parser.java" afterDir="false" />
-    </list>
+    <list default="true" id="a3f5ded8-679a-4a8a-b790-36494603e844" name="Default Changelist" comment="" />
     <list id="33778796-e62a-41f2-9756-a63a77742b9e" name="Revert: " comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,10 +97,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StackCalculator/src/com/course/lapshakov/sem2/parsers/FileParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="784">
-              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+            <state relative-caret-position="-179">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#669#711#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,7 +128,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/StackCalculator/src/com/course/lapshakov/sem2/parsers/ConsoleParser.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
@@ -231,7 +229,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StackCalculator/src/com/course/lapshakov/sem2/parsers/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="98">
@@ -251,7 +249,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StackCalculator/src/com/course/lapshakov/sem2/parsers/Reader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
+            <state relative-caret-position="387">
               <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -433,7 +431,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560657243051" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560657287389" />
     <property name="jdk.selected.JAVA_MODULE" value="10" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
@@ -665,19 +663,26 @@
       <option name="project" value="LOCAL" />
       <updated>1560655098537</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="finished.">
+      <created>1560657276115</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1560657276115</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1672" height="1096" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8197425" visible="true" weight="0.26674938" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.81985295" visible="true" weight="0.26674938" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Favorites" order="5" sideWeight="0.090066224" side_tool="true" weight="0.26426798" />
-      <window_info id="Structure" order="6" sideWeight="0.18025751" side_tool="true" visible="true" weight="0.26674938" />
+      <window_info id="Structure" order="6" sideWeight="0.18014705" side_tool="true" visible="true" weight="0.26674938" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49937966" weight="0.28037384" />
@@ -685,8 +690,8 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4975186" visible="true" weight="0.5160955" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5024814" side_tool="true" visible="true" weight="0.5160955" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4975186" visible="true" weight="0.43509865" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5024814" side_tool="true" visible="true" weight="0.43509865" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4975186" weight="0.31671858" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4987593" weight="0.22014537" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -1080,19 +1085,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StackCalculator/src/com/course/lapshakov/sem2/parsers/ConsoleParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/StackCalculator/src/com/course/lapshakov/sem2/parsers/Reader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
+        <state relative-caret-position="387">
           <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1102,8 +1097,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/StackCalculator/src/com/course/lapshakov/sem2/parsers/FileParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="-179">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#669#711#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StackCalculator/src/com/course/lapshakov/sem2/parsers/ConsoleParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
