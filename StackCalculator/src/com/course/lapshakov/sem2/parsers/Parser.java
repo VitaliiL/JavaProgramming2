@@ -14,5 +14,4 @@ public interface Parser {
     default List<Command> getUserCommands() {
         return null;
     }
-
 }

@@ -24,6 +24,5 @@ public class FileParser implements Parser {
         }
 
         throw new IllegalArgumentException("There are no commands.");
-
     }
 }
