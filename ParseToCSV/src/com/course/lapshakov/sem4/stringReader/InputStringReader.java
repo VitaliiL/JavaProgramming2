@@ -4,6 +4,7 @@ import com.course.lapshakov.sem4.wordCounter.WordCounter;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
 import java.util.*;
 
 public class InputStringReader implements StringReader {
@@ -16,11 +17,11 @@ public class InputStringReader implements StringReader {
         StringBuilder stringBuilder = new StringBuilder();
 
         try (Reader reader = new InputStreamReader(new BufferedInputStream(new FileInputStream(inputString)), StandardCharsets.UTF_8)) {
-            if (reader.read() == 0) {
+            int inputData = 0;
+
+            if (!reader.ready() || inputString.length() == 0) {
                 System.err.println("File is empty");
             }
-
-            int inputData = 0;
 
             while (reader.ready()) {
                 char symbol = (char) inputData;
@@ -30,7 +31,7 @@ public class InputStringReader implements StringReader {
                     stringBuilder.append(symbol);
                 }
 
-                if (symbol == SPACE) {
+                if (symbol == SPACE || symbol == '\n') {
                     String inputBuilderString = stringBuilder.toString().toLowerCase();
 
                     if (statMap.containsKey(inputBuilderString)) {
@@ -47,9 +48,9 @@ public class InputStringReader implements StringReader {
 
                     stringBuilder.setLength(0);
                     wordsTotalAmount++;
+
                 }
             }
-
         } catch (
                 FileNotFoundException e) {
             System.err.println("File not found.");
