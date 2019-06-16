@@ -21,7 +21,7 @@ public class WordCounter implements Comparable<WordCounter> {
 
     @Override
     public int compareTo(WordCounter o) {
-        return Double.compare(o.counter, this.counter);
+        return Integer.compare(o.counter, this.counter);
     }
 
     @Override
