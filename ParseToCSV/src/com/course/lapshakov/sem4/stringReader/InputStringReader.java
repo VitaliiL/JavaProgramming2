@@ -40,9 +40,9 @@ public class InputStringReader implements Reader {
                             wordCounter1.setCounter(counter);
                         } else {
                             WordCounter wordCounter = new WordCounter(stringBuilder.toString(), 1);
-
                             statMap.put(stringBuilder.toString(), wordCounter);
                         }
+
                         stringBuilder.setLength(0);
                         wordsTotalAmount++;
                     }
@@ -53,7 +53,6 @@ public class InputStringReader implements Reader {
             System.err.println("File not found.");
             e.printStackTrace();
         }
-
     }
 
     public static Map<String, WordCounter> getStatMap() {

@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a3f5ded8-679a-4a8a-b790-36494603e844" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ParseToCSV/src/Helper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParseToCSV/src/com/course/lapshakov/sem4/operations/ParserTXT.java" beforeDir="false" afterPath="$PROJECT_DIR$/ParseToCSV/src/com/course/lapshakov/sem4/operations/ParserTXT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParseToCSV/src/com/course/lapshakov/sem4/stringReader/InputStringReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/ParseToCSV/src/com/course/lapshakov/sem4/stringReader/InputStringReader.java" afterDir="false" />
     </list>
     <list id="33778796-e62a-41f2-9756-a63a77742b9e" name="Revert: " comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,7 +29,7 @@
           <entry key="fileCSV" value="1" />
           <entry key="iml" value="1" />
           <entry key="inputFile" value="5" />
-          <entry key="java" value="111" />
+          <entry key="java" value="115" />
           <entry key="log" value="1" />
           <entry key="outFile" value="2" />
           <entry key="outputFile" value="4" />
@@ -41,7 +42,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="111" />
+          <entry key="JAVA" value="115" />
           <entry key="PLAIN_TEXT" value="17" />
           <entry key="XML" value="1" />
         </counts>
@@ -50,14 +51,14 @@
         <counts>
           <entry key="dummy" value="23" />
           <entry key="inputFile" value="70" />
-          <entry key="java" value="12962" />
+          <entry key="java" value="12965" />
           <entry key="parseTXT" value="203" />
           <entry key="txt" value="215" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="12962" />
+          <entry key="JAVA" value="12965" />
           <entry key="PLAIN_TEXT" value="511" />
         </counts>
       </usages-collector>
@@ -105,8 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ParseToCSV/src/com/course/lapshakov/sem4/comporator/WordCounter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+            <state relative-caret-position="378">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="e#331#332#0" expanded="true" />
                 <element signature="e#361#362#0" expanded="true" />
@@ -171,11 +172,57 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StackCalc/src/com/course/lapshakov/sem2/parsers/Reader.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="56">
               <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ParseToCSV/src/com/course/lapshakov/sem4/stringWriter/Writer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ParseToCSV/src/com/course/lapshakov/sem4/stringWriter/OutputStringWriter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="28" column="64" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ParseToCSV/src/com/course/lapshakov/sem4/stringReader/InputStringReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="490">
+              <caret line="41" column="99" selection-start-line="41" selection-start-column="99" selection-end-line="41" selection-end-column="99" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2117#2118#0" expanded="true" />
+                <element signature="e#2147#2148#0" expanded="true" />
+                <element signature="e#2194#2195#0" expanded="true" />
+                <element signature="e#2233#2234#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ParseToCSV/src/com/course/lapshakov/sem4/operations/ParserTXT.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -196,7 +243,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/StackCalculator/src/com/course/lapshakov/sem2/arithmeticOperations/Define.java" />
         <option value="$PROJECT_DIR$/StackCalculator/src/com/course/lapshakov/sem2/interfaces/CommandWithStringArg.java" />
         <option value="$PROJECT_DIR$/StackCalculator/src/com/course/lapshakov/sem2/arithmeticOperations/Sum.java" />
         <option value="$PROJECT_DIR$/StackCalculator/src/com/course/lapshakov/sem2/arithmeticOperations/Print.java" />
@@ -246,6 +292,7 @@
         <option value="$PROJECT_DIR$/ParseToCSV/src/com/course/lapshakov/sem4/stringReader/Reader.java" />
         <option value="$PROJECT_DIR$/ParseToCSV/src/com/course/lapshakov/sem4/stringWriter/Writer.java" />
         <option value="$PROJECT_DIR$/ParseToCSV/src/com/course/lapshakov/sem4/comporator/WordCounter.java" />
+        <option value="$PROJECT_DIR$/ParseToCSV/src/com/course/lapshakov/sem4/stringReader/InputStringReader.java" />
         <option value="$PROJECT_DIR$/ParseToCSV/src/com/course/lapshakov/sem4/operations/ParserTXT.java" />
       </list>
     </option>
@@ -302,28 +349,41 @@
             <path>
               <item name="JavaProgramming2" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaProgramming2" type="462c0819:PsiDirectoryNode" />
-              <item name="StackCalc" type="462c0819:PsiDirectoryNode" />
+              <item name="ParseToCSV" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sem4" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaProgramming2" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaProgramming2" type="462c0819:PsiDirectoryNode" />
-              <item name="StackCalc" type="462c0819:PsiDirectoryNode" />
+              <item name="ParseToCSV" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sem4" type="462c0819:PsiDirectoryNode" />
+              <item name="comporator" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaProgramming2" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaProgramming2" type="462c0819:PsiDirectoryNode" />
-              <item name="StackCalc" type="462c0819:PsiDirectoryNode" />
+              <item name="ParseToCSV" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sem2" type="462c0819:PsiDirectoryNode" />
+              <item name="sem4" type="462c0819:PsiDirectoryNode" />
+              <item name="operations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaProgramming2" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaProgramming2" type="462c0819:PsiDirectoryNode" />
-              <item name="StackCalc" type="462c0819:PsiDirectoryNode" />
+              <item name="ParseToCSV" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="sem2" type="462c0819:PsiDirectoryNode" />
-              <item name="parsers" type="462c0819:PsiDirectoryNode" />
+              <item name="sem4" type="462c0819:PsiDirectoryNode" />
+              <item name="stringReader" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaProgramming2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaProgramming2" type="462c0819:PsiDirectoryNode" />
+              <item name="ParseToCSV" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="sem4" type="462c0819:PsiDirectoryNode" />
+              <item name="stringWriter" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -334,7 +394,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560658600185" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560659204697" />
     <property name="jdk.selected.JAVA_MODULE" value="10" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
@@ -353,7 +413,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Calculator">
+  <component name="RunManager" selected="Application.ParserTXT">
     <configuration name="Calculator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.course.lapshakov.sem2.main.Calculator" />
       <module name="StackCalculator" />
@@ -388,8 +448,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Calculator" />
         <item itemvalue="Application.ParserTXT" />
+        <item itemvalue="Application.Calculator" />
       </list>
     </recent_temporary>
   </component>
@@ -601,7 +661,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560658590501</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="finished.">
+      <created>1560658945608</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1560658945608</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TodoView">
@@ -615,25 +682,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1672" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8202503" visible="true" weight="0.26674938" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.81962484" visible="true" weight="0.26674938" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Favorites" order="5" sideWeight="0.090066224" side_tool="true" weight="0.26426798" />
-      <window_info id="Structure" order="6" sideWeight="0.17974971" side_tool="true" visible="true" weight="0.26674938" />
+      <window_info id="Structure" order="6" sideWeight="0.18037517" side_tool="true" visible="true" weight="0.26674938" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49937966" weight="0.28037384" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4987593" visible="true" weight="0.28037384" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49937966" weight="0.403946" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49937966" weight="0.32917964" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4975186" weight="0.43509865" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50310177" side_tool="true" visible="true" weight="0.08722741" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49689826" visible="true" weight="0.08722741" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5012407" side_tool="true" visible="true" weight="0.28037384" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49689826" weight="0.08722741" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4987593" weight="0.22014537" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -884,36 +950,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseToCSV/src/com/course/lapshakov/sem4/stringReader/InputStringReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="36" column="60" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2569#2570#0" expanded="true" />
-            <element signature="e#2599#2600#0" expanded="true" />
-            <element signature="e#2646#2647#0" expanded="true" />
-            <element signature="e#2685#2686#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/parseTXT">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
           <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inputFile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/outputFile">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/StackCalculator/src/com/course/lapshakov/sem2/main/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -988,55 +1030,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ParseToCSV/src/com/course/lapshakov/sem4/stringWriter/Writer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseToCSV/src/com/course/lapshakov/sem4/stringWriter/OutputStringWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="28" column="64" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseToCSV/src/com/course/lapshakov/sem4/operations/ParserTXT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fileCSV">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParseToCSV/src/com/course/lapshakov/sem4/comporator/WordCounter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-          <folding>
-            <element signature="e#331#332#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#561#562#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#1023#1024#0" expanded="true" />
-            <element signature="e#1067#1068#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/StackCalc/src/com/course/lapshakov/sem2/main/CommandFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -1089,6 +1082,76 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseToCSV/src/com/course/lapshakov/sem4/stringWriter/Writer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outputFile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inputFile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fileCSV">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseToCSV/src/com/course/lapshakov/sem4/stringWriter/OutputStringWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="28" column="64" selection-start-line="28" selection-start-column="64" selection-end-line="28" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseToCSV/src/com/course/lapshakov/sem4/comporator/WordCounter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="e#331#332#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#561#562#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+            <element signature="e#1023#1024#0" expanded="true" />
+            <element signature="e#1067#1068#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseToCSV/src/com/course/lapshakov/sem4/operations/ParserTXT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParseToCSV/src/com/course/lapshakov/sem4/stringReader/InputStringReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="41" column="99" selection-start-line="41" selection-start-column="99" selection-end-line="41" selection-end-column="99" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2117#2118#0" expanded="true" />
+            <element signature="e#2147#2148#0" expanded="true" />
+            <element signature="e#2194#2195#0" expanded="true" />
+            <element signature="e#2233#2234#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,9 +1,12 @@
 package com.course.lapshakov.sem4.operations;
 
 
+import com.course.lapshakov.sem4.stringReader.InputStringReader;
+import com.course.lapshakov.sem4.stringWriter.OutputStringWriter;
+
 public class ParserTXT {
     public static void main(String[] args) {
-        InputStr inputStringReader = new InputStringReader();
+        InputStringReader inputStringReader = new InputStringReader();
         OutputStringWriter outputStringWriter = new OutputStringWriter();
 
         if (args.length != 2) {
