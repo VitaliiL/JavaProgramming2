@@ -4,7 +4,6 @@ import com.course.lapshakov.sem4.wordCounter.WordCounter;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
 import java.util.*;
 
 public class InputStringReader implements StringReader {
@@ -48,7 +47,6 @@ public class InputStringReader implements StringReader {
 
                     stringBuilder.setLength(0);
                     wordsTotalAmount++;
-
                 }
             }
         } catch (
