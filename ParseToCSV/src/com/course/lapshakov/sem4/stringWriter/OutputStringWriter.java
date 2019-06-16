@@ -10,7 +10,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-public class OutputStringWriter implements Writer {
+public class OutputStringWriter implements StringWriter {
     private static final char SEPARATOR = ';';
     private Map<String, WordCounter> statMap = InputStringReader.getStatMap();
     private List<WordCounter> wordCountersList = new ArrayList<>();

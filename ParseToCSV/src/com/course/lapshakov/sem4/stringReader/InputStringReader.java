@@ -2,11 +2,12 @@ package com.course.lapshakov.sem4.stringReader;
 
 import com.course.lapshakov.sem4.comporator.WordCounter;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+import java.io.*;
+import java.nio.CharBuffer;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 
-public class InputStringReader implements Reader {
+public class InputStringReader implements StringReader {
     private static final char SPACE = ' ';
     private static Map<String, WordCounter> statMap = new HashMap<>();
     private static int wordsTotalAmount = 0;
@@ -15,42 +16,45 @@ public class InputStringReader implements Reader {
     public void readString(String inputString) {
         StringBuilder stringBuilder = new StringBuilder();
 
-        try (Scanner scanner = new Scanner(new FileInputStream(inputString))) {
-            if (!scanner.hasNextLine()) {
+        try (Reader reader = new InputStreamReader(new BufferedInputStream(new FileInputStream(inputString)), StandardCharsets.UTF_8)) {
+            if (reader.read() == 0) {
                 System.err.println("File is empty");
             }
 
-            while (scanner.hasNextLine()) {
-                String inputScanner = scanner.nextLine();
+            int inputData = 0;
 
-                for (int i = 0; i < inputScanner.length(); i++) {
-                    char symbol = inputScanner.charAt(i);
+            while (reader.ready()) {
+                char symbol = (char) inputData;
+                inputData = reader.read();
 
-                    if (Character.isLetterOrDigit(symbol)) {
-                        stringBuilder.append(symbol);
+                if (Character.isLetterOrDigit(symbol)) {
+                    stringBuilder.append(symbol);
+                }
+
+                if (symbol == SPACE) {
+                    String inputBuilderString = stringBuilder.toString().toLowerCase();
+                    if (statMap.containsKey(inputBuilderString)) {
+                        WordCounter wordCounter1 = statMap.get(inputBuilderString);
+
+                        int counter = wordCounter1.getCounter();
+                        counter++;
+
+                        wordCounter1.setCounter(counter);
+                    } else {
+                        WordCounter wordCounter = new WordCounter(inputBuilderString, 1);
+                        statMap.put(inputBuilderString, wordCounter);
                     }
 
-                    if (symbol == SPACE || i == inputScanner.length() - 1) {
-                        if (statMap.containsKey(stringBuilder.toString())) {
-                            WordCounter wordCounter1 = statMap.get(stringBuilder.toString());
-
-                            int counter = wordCounter1.getCounter();
-                            counter++;
-
-                            wordCounter1.setCounter(counter);
-                        } else {
-                            WordCounter wordCounter = new WordCounter(stringBuilder.toString(), 1);
-                            statMap.put(stringBuilder.toString(), wordCounter);
-                        }
-
-                        stringBuilder.setLength(0);
-                        wordsTotalAmount++;
-                    }
+                    stringBuilder.setLength(0);
+                    wordsTotalAmount++;
                 }
             }
+
         } catch (
                 FileNotFoundException e) {
             System.err.println("File not found.");
+            e.printStackTrace();
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
