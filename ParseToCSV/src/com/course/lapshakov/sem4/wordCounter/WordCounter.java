@@ -1,4 +1,4 @@
-package com.course.lapshakov.sem4.comporator;
+package com.course.lapshakov.sem4.wordCounter;
 
 import java.util.Objects;
 

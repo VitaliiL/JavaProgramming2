@@ -1,9 +1,8 @@
 package com.course.lapshakov.sem4.stringReader;
 
-import com.course.lapshakov.sem4.comporator.WordCounter;
+import com.course.lapshakov.sem4.wordCounter.WordCounter;
 
 import java.io.*;
-import java.nio.CharBuffer;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 
