@@ -1,6 +1,6 @@
-package stringReader;
+package com.course.lapshakov.sem4.stringReader;
 
-import comporator.WordCounter;
+import com.course.lapshakov.sem4.comporator.WordCounter;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

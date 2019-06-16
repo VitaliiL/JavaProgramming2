@@ -1,4 +1,4 @@
-package comporator;
+package com.course.lapshakov.sem4.comporator;
 
 import java.util.Objects;
 
