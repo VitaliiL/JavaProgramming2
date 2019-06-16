@@ -1,4 +1,4 @@
-package com.course.lapshakov.sem2.parsers;
+package com.course.lapshakov.sem2.Parsers;
 
 import com.course.lapshakov.sem2.operations.Command;
 

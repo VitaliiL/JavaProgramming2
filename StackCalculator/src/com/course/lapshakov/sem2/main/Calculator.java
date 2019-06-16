@@ -1,10 +1,10 @@
 package com.course.lapshakov.sem2.main;
 
+import com.course.lapshakov.sem2.Parsers.ConsoleParser;
+import com.course.lapshakov.sem2.Parsers.FileParser;
+import com.course.lapshakov.sem2.Parsers.Parser;
 import com.course.lapshakov.sem2.operations.Print;
-import com.course.lapshakov.sem2.parsers.ConsoleParser;
-import com.course.lapshakov.sem2.parsers.FileParser;
 import com.course.lapshakov.sem2.operations.Command;
-import com.course.lapshakov.sem2.parsers.Parser;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
@@ -57,6 +57,7 @@ public class Calculator {
         } catch (IndexOutOfBoundsException e) {
             System.err.println("Check your arguments.");
         } catch (FileNotFoundException e) {
+            System.err.println("Your file not found.");
             e.printStackTrace();
         }
     }

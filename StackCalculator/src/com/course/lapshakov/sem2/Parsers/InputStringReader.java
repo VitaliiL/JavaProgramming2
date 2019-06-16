@@ -1,4 +1,4 @@
-package com.course.lapshakov.sem2.parsers;
+package com.course.lapshakov.sem2.Parsers;
 
 import com.course.lapshakov.sem2.main.CommandFactory;
 import com.course.lapshakov.sem2.operations.Command;
@@ -8,11 +8,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Reader implements Parser {
+public class InputStringReader implements Parser {
     private static List<Command> commandList = new ArrayList<>();
 
     @Override
-    public List<Command> getCommands(InputStream inputStream) {
+    public List<Command> getCommands(InputStream inputStream) throws IllegalArgumentException {
         Scanner scanner = new Scanner(inputStream);
         CommandFactory commandFactory = new CommandFactory();
 
