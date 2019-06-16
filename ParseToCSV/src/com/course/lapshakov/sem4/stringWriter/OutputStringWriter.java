@@ -17,6 +17,8 @@ public class OutputStringWriter implements StringWriter {
 
     @Override
     public void writeString(String outputString) {
+        int maxWords = InputStringReader.getWordsTotalAmount();
+
         wordCountersList = getSortList();
         try (PrintWriter printWriter = new PrintWriter(outputString)) {
             for (WordCounter element : wordCountersList) {
@@ -24,7 +26,6 @@ public class OutputStringWriter implements StringWriter {
                 printWriter.write(SEPARATOR);
 
                 double counter = element.getCounter();
-                int maxWords = InputStringReader.getWordsTotalAmount();
 
                 double wordFrequency = counter / maxWords * 100;
                 printWriter.write(String.format("%.2f%n", wordFrequency));
