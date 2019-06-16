@@ -10,6 +10,7 @@ public interface Parser {
         return null;
     }
 
+
     default List<Command> getUserCommands() {
         return null;
     }
