@@ -32,6 +32,7 @@ public class InputStringReader implements StringReader {
 
                 if (symbol == SPACE) {
                     String inputBuilderString = stringBuilder.toString().toLowerCase();
+
                     if (statMap.containsKey(inputBuilderString)) {
                         WordCounter wordCounter1 = statMap.get(inputBuilderString);
 
