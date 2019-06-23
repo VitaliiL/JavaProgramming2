@@ -19,6 +19,10 @@ public class WordCounter implements Comparable<WordCounter> {
         this.counter = counter;
     }
 
+    public String getWord() {
+        return word;
+    }
+
     @Override
     public int compareTo(WordCounter o) {
         return Integer.compare(o.counter, this.counter);

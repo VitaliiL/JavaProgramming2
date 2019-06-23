@@ -5,17 +5,13 @@ import com.course.lapshakov.sem4.stringReader.InputStringReader;
 
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
-public class OutputStringWriter implements StringWriter {
+public class OutputStringWriter {
     private static final char SEPARATOR = ';';
     private Map<String, WordCounter> statMap = InputStringReader.getStatMap();
     private List<WordCounter> wordCountersList = new ArrayList<>();
 
-    @Override
     public void writeString(String outputString) {
         int maxWords = InputStringReader.getWordsTotalAmount();
 
@@ -36,11 +32,31 @@ public class OutputStringWriter implements StringWriter {
     }
 
     private List<WordCounter> getSortList() {
-        for (String word : statMap.keySet()) {
-            wordCountersList.add(statMap.get(word));
-        }
+        wordCountersList.addAll(statMap.values());
+
+//        for (String word : statMap.keySet()) {
+//            wordCountersList.add(statMap.get(word));
+//        }
+
+//        need to replace with lambda or reference:
+        wordCountersList.sort(new Comparator<>() {
+            @Override
+            public int compare(WordCounter o1, WordCounter o2) {
+                return o1.compareTo(o2);
+            }
+        });
+
+/*        other variants to sort:
+        Set<WordCounter> wordCountersSet = new TreeSet<>(wordCountersList);
 
         Collections.sort(wordCountersList);
+
+        wordCountersList.sort(
+                Comparator
+                .comparingLong(WordCounter::getCounter)
+                .reversed()
+                .thenComparing(WordCounter::getWord)
+        );*/
 
         return wordCountersList;
     }

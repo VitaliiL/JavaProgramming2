@@ -1,6 +1,5 @@
 package com.course.lapshakov.sem4.operations;
 
-
 import com.course.lapshakov.sem4.stringReader.InputStringReader;
 import com.course.lapshakov.sem4.stringWriter.OutputStringWriter;
 
