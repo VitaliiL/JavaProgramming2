@@ -33,7 +33,6 @@ public class InputStringReader {
             if ((stringBuilder.length()) != 0) {
                 checkWordAndAddToMap(stringBuilder);
             }
-
         } catch (
                 FileNotFoundException e) {
             System.err.println("File not found.");

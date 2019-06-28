@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ExceptionGenerator/ExceptionGenerator.iml" filepath="$PROJECT_DIR$/ExceptionGenerator/ExceptionGenerator.iml" />
       <module fileurl="file://$PROJECT_DIR$/GuessNumber/GuessNumber.iml" filepath="$PROJECT_DIR$/GuessNumber/GuessNumber.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaProgramming2.iml" filepath="$PROJECT_DIR$/.idea/JavaProgramming2.iml" />
       <module fileurl="file://$PROJECT_DIR$/ParseToCSV/ParseToCSV.iml" filepath="$PROJECT_DIR$/ParseToCSV/ParseToCSV.iml" />
