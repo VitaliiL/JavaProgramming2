@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/ParseToCSV/ParseToCSV.iml" filepath="$PROJECT_DIR$/ParseToCSV/ParseToCSV.iml" />
       <module fileurl="file://$PROJECT_DIR$/ParseToCSV_Stream/ParseToCSV_Stream.iml" filepath="$PROJECT_DIR$/ParseToCSV_Stream/ParseToCSV_Stream.iml" />
       <module fileurl="file://$PROJECT_DIR$/StackCalc/StackCalc.iml" filepath="$PROJECT_DIR$/StackCalc/StackCalc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/workWithDataBase/workWithDataBase.iml" filepath="$PROJECT_DIR$/workWithDataBase/workWithDataBase.iml" />
     </modules>
   </component>
 </project>
